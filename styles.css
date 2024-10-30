@@ -76,15 +76,24 @@ main {
 }
 
 .forecast {
-  border-spacing: 0;
+  width: 100%; 
+  border-collapse: collapse; 
+  margin-top: var(--spacing);
 }
 
-.forecast th,
+.forecast th {
+  background-color: #4CAF50; 
+  color: white; 
+  padding: calc(var(--spacing) / 2); 
+  text-align: left; 
+  border-bottom: 2px solid #ddd; 
+}
+
 .forecast td {
-  padding: calc(var(--spacing) / 2);
-  text-align: left;
+  border: 1px solid  #dddddd; /* Mörk fyrir frumulínur */
+  padding: calc(var(--spacing) / 2); /* Innri bilun í frumulínur */
 }
 
-.forecast tbody tr:nth-child(2n + 1) {
-  background-color: var(--color-background-zebra);
+.forecast tr:nth-child(odd) {
+  background-color: var(--color-background-zebra); /* Ljósgrár bakgrunnur fyrir hverja aðra línu */
 }
