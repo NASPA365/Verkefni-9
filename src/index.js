@@ -20,7 +20,7 @@ import { weatherSearch } from "./lib/weather.js";
 const locations = [
   {
     title: "Reykjavík",
-    lat: 11.11,
+    lat: 64.1355,
     lng: -21.8954,
   },
   {
